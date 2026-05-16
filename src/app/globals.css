@@ -1,26 +1,258 @@
 @import "tailwindcss";
 
+/* ============================================
+   POKETOD SMP — Minecraft Design System
+   ============================================ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Minecraft Color Palette */
+  --color-mc-primary: #e11d48; /* Beautiful Crimson Red */
+  --color-mc-primary-dark: #be123c;
+  --color-mc-brass: #fbbf24;
+  --color-mc-brass-dark: #d97706;
+  
+  --color-mc-paper: #e5d9b5; /* Pale yellow map paper */
+  --color-mc-paper-dark: #c0a976;
+  --color-mc-wood: #4a3018;
+  
+  --color-mc-bg: #1e2430; /* Very dark blue-grey background */
+  --color-mc-nav: #181d26; /* Darker header */
+  --color-mc-card: #2b3340; /* Lighter panel for contrast against bg */
+  --color-mc-slot: #1c212b; /* Inset slot color */
+  
+  --color-dark-300: #d1d5db;
+  --color-dark-400: #9ca3af;
+  --color-dark-700: #374151;
+  --color-dark-800: #1f2937;
+  --color-dark-900: #111827;
+  --color-dark-950: #0a0d14; /* Deep outline */
+}
+
+@font-face {
+  font-family: 'Minecrafter';
+  src: url('/fonts/Minecrafter.Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Register the CSS variables to Tailwind for utility classes */
+  --color-mc-primary: var(--color-mc-primary);
+  --color-mc-brass: var(--color-mc-brass);
+  --color-mc-nav: var(--color-mc-nav);
+  --color-dark-300: var(--color-dark-300);
+  --color-dark-400: var(--color-dark-400);
+  --color-dark-700: var(--color-dark-700);
+  --color-dark-800: var(--color-dark-800);
+  --color-dark-900: var(--color-dark-900);
+  --color-dark-950: var(--color-dark-950);
+  
+  /* Fonts */
+  --font-heading: 'Minecrafter', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-mc-primary) var(--color-mc-nav);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-mc-nav);
+  border-left: 2px solid var(--color-dark-950);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--color-mc-primary);
+  border: 2px solid var(--color-dark-950);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-mc-bg);
+  color: white;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  /* Crisp edges for the pixel font */
+  -webkit-font-smoothing: none;
+  font-smooth: never;
 }
+
+/* ============================================
+   TEXTURED BACKGROUND
+   ============================================ */
+
+.mc-bg {
+  background-color: var(--color-mc-bg);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.2) 2px, transparent 2px);
+  background-size: 64px 64px;
+  background-position: -2px -2px;
+}
+
+/* ============================================
+   PANELS
+   ============================================ */
+
+/* Map Paper Panel (for Copy IP CTA) */
+.map-panel {
+  background-color: var(--color-mc-paper);
+  color: #3b250d;
+  border: 4px solid var(--color-mc-paper-dark);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  position: relative;
+  /* Fix tailwind bg overriding */
+  background-image: none;
+}
+
+/* Default Content Card (lighter than background so it's not monotone) */
+.solid-card {
+  background-color: var(--color-mc-card);
+  border: 4px solid var(--color-dark-950);
+  box-shadow: inset 4px 4px 0 rgba(255,255,255,0.05), inset -4px -4px 0 rgba(0,0,0,0.4), 0 8px 16px rgba(0,0,0,0.4);
+}
+
+/* Small dark panel */
+.solid-panel {
+  background-color: var(--color-mc-slot);
+  border: 2px solid var(--color-dark-950);
+}
+
+/* Navbar / Footer panel */
+.dark-panel {
+  background-color: var(--color-mc-nav);
+  border-bottom: 4px solid var(--color-dark-950);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+/* ============================================
+   MINECRAFT BUTTONS
+   ============================================ */
+
+.btn-primary {
+  background-color: var(--color-mc-primary);
+  color: white;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border: 4px solid var(--color-dark-950);
+  box-shadow: 
+    inset 0 4px 0 rgba(255,255,255,0.3), 
+    inset 0 -6px 0 var(--color-mc-primary-dark), 
+    0 6px 0 var(--color-dark-950);
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.btn-primary:active {
+  transform: translateY(6px);
+  box-shadow: 
+    inset 0 4px 0 rgba(255,255,255,0.3), 
+    inset 0 -2px 0 var(--color-mc-primary-dark), 
+    0 0px 0 var(--color-dark-950);
+  margin-bottom: 0px;
+}
+
+.btn-primary:hover {
+  background-color: #f43f5e; /* Rose 500 */
+}
+
+.btn-ghost {
+  background-color: var(--color-mc-slot);
+  color: white;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border: 4px solid var(--color-dark-950);
+  box-shadow: 
+    inset 0 4px 0 rgba(255,255,255,0.1), 
+    inset 0 -6px 0 rgba(0,0,0,0.4), 
+    0 6px 0 var(--color-dark-950);
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.btn-ghost:active {
+  transform: translateY(6px);
+  box-shadow: 
+    inset 0 4px 0 rgba(255,255,255,0.1), 
+    inset 0 -2px 0 rgba(0,0,0,0.4), 
+    0 0px 0 var(--color-dark-950);
+  margin-bottom: 0px;
+}
+
+.btn-ghost:hover {
+  background-color: #384252;
+}
+
+/* ============================================
+   FORM INPUTS (Minecraft Slots)
+   ============================================ */
+
+.input-mc {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-mc-slot);
+  color: white;
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  border: 4px solid var(--color-dark-950);
+  box-shadow: inset 4px 4px 0 rgba(0,0,0,0.6), inset -4px -4px 0 rgba(255,255,255,0.05);
+  outline: none;
+  transition: border-color 0.1s;
+}
+
+.input-mc:focus {
+  border-color: var(--color-mc-primary);
+}
+
+.input-mc::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+
+.pl-icon {
+  padding-left: 2.5rem !important;
+}
+
+/* ============================================
+   MISC
+   ============================================ */
+
+.text-shadow {
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+}
+
+/* Status badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid var(--color-dark-950);
+  box-shadow: 2px 2px 0 var(--color-dark-950);
+}
+
+.badge-pending { background: #f59e0b; color: #1a1a1a; }
+.badge-planned { background: #3b82f6; color: white; }
+.badge-implemented { background: var(--color-mc-primary); color: white; }
+.badge-rejected { background: #52525b; color: white; }
