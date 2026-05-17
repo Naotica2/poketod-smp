@@ -75,7 +75,7 @@ export default function SuggestionsPage() {
     e.preventDefault()
     if (!user) { setShowLogin(true); return }
     setSubmitting(true)
-    const { error } = await supabase.from('suggestions').insert({ title, content, author_id: user.id })
+    const { error } = await supabase.from('suggestions').insert({ title, content, author_id: user.id, status: 'pending' })
     if (error) {
       alert(`Gagal mengirim saran: ${error.message}`)
       console.error(error)
