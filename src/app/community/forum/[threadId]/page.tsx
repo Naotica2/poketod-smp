@@ -50,7 +50,13 @@ export default function ThreadPage() {
     e.preventDefault()
     if (!user || !replyText.trim()) return
     setSubmitting(true)
-    await supabase.from('forum_replies').insert({ content: replyText, author_id: user.id, thread_id: threadId })
+    const { error } = await supabase.from('forum_replies').insert({ content: replyText, author_id: user.id, thread_id: threadId })
+    if (error) {
+      alert(`Gagal mengirim balasan: ${error.message}`)
+      console.error(error)
+      setSubmitting(false)
+      return
+    }
     setReplyText(''); setSubmitting(false); await load()
   }
 

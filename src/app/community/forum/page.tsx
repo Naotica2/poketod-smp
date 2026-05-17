@@ -55,7 +55,13 @@ export default function ForumPage() {
     e.preventDefault()
     if (!user || !selectedCat) return
     setSubmitting(true)
-    await supabase.from('forum_threads').insert({ title: newTitle, content: newContent, author_id: user.id, category_id: selectedCat })
+    const { error } = await supabase.from('forum_threads').insert({ title: newTitle, content: newContent, author_id: user.id, category_id: selectedCat })
+    if (error) {
+      alert(`Gagal membuat thread: ${error.message}`)
+      console.error(error)
+      setSubmitting(false)
+      return
+    }
     setNewTitle(''); setNewContent(''); setShowNew(false); setSubmitting(false)
     await loadThreads()
   }
