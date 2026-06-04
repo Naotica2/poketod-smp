@@ -63,7 +63,7 @@ const tutorialData: Record<LauncherKey, {
           "Click on hamburger icon",
           "Click open mods folder",
           "Unzip the .zip file you downloaded earlier during the steps for the MrPack to ZIP converter",
-          "and move all the contents of the mods folder which you extracted from .zip to the mods folder in the Minecraft Legacy Launcher version Neoforge 1.21.1"
+          "and move all the contents of the mods folder which you extracted from .zip to the mods folder in the Minecraft Legacy Launcher version Fabric 1.21.1"
         ],
         images: ["legacystep1.jpeg", "legacystep3.jpeg"]
       }
