@@ -233,12 +233,12 @@ export default function HomePage() {
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 className="w-full flex items-center justify-between p-6 text-left transition-colors hover:bg-dark-800"
               >
-                <h3 className="font-heading font-bold text-lg text-mc-primary">
+                <h3 className="font-heading font-bold text-lg text-white">
                   {faq.q}
                 </h3>
                 <ChevronDown
                   size={20}
-                  className={`text-mc-primary transition-transform duration-200 ${openFaq === i ? 'rotate-180' : ''}`}
+                  className={`text-white transition-transform duration-200 ${openFaq === i ? 'rotate-180' : ''}`}
                 />
               </button>
               <AnimatePresence>
@@ -328,8 +328,7 @@ export default function HomePage() {
                 Ready to Begin Your Adventure?
               </h2>
               <p className="text-dark-300 bg-dark-900/80 p-4 border-2 border-dark-950 shadow-[2px_2px_0_#06080b] max-w-xl mx-auto mb-8 font-bold">
-                Join hundreds of players in a world where Pokémon roam wild and steampunk
-                machines fill the skies. Your journey starts here.
+                Join hundreds of players in a world where Pokémon roam wild and thrilling gym battles await. Your journey starts here.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <button onClick={copyIP} className="btn-primary font-heading px-8 py-3 text-lg flex items-center gap-2">
