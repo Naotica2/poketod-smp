@@ -51,8 +51,9 @@ const tutorialData: Record<LauncherKey, {
         title: "Install the Version",
         list: [
           "Open Legacy Launcher.",
-          "Install minecraft version neoforge 1.21.1",
+          "Install minecraft version Fabric 1.21.1",
           "Wait until the installation is complete",
+          "The screenshot shows that Neoforge 1.21.1 is installed, but trust me, you need to download Fabric 1.21.1, not Neoforge 1.21.1"
         ],
         images: ["legacystep2.jpeg"]
       },
@@ -83,10 +84,11 @@ const tutorialData: Record<LauncherKey, {
         title: "Install via Prism",
         list: [
           "Open Prism Launcher.",
-          "Click 'Add Instance' in the top left.",
-          "Select 'Import' on the left side.",
-          "Browse and select the poketod smp.mrpack file.",
-          "Click OK and wait for it to extract."
+          "Click Add Instance in the top left.",
+          "Select Modrinth on the left side.",
+          "Search for “Poketod SMP” in the search bar",
+          "Then click on the Poketod SMP modpack when it appears",
+          "and click OK"
         ],
         images: ["prismstep1.png", "prismstep2.png"]
       }
