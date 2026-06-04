@@ -31,12 +31,12 @@ export default function Footer() {
             <h3 className="font-heading font-bold text-xl text-mc-primary text-shadow mb-3">
               Poketod SMP
             </h3>
-            <p className="text-dark-300 text-sm leading-relaxed mb-4">
-              A unique Minecraft SMP blending Cobblemon with Create Aeronautics. Catch, build, and fly!
+            <p className="text-dark-300 text-sm leading-relaxed max-w-sm">
+              The ultimate Minecraft SMP focusing on Cobblemon. Catch, train, battle, and become the very best!
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://discord.gg/poketodsmp"
+                href="https://discord.gg/uEqdGs6w6F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 solid-panel border-2 border-dark-950 text-dark-300 hover:text-mc-primary hover:bg-dark-800 transition-all"

@@ -127,7 +127,7 @@ export default function RulesPage() {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mt-10 solid-card p-5 text-center">
           <p className="text-dark-300 font-bold text-sm">
             By playing on Poketod SMP, you agree to follow these rules. Staff decisions are final.
-            For questions, visit our <a href="https://discord.gg/poketodsmp" className="text-mc-primary hover:underline">Discord</a>.
+            For questions, visit our <a href="https://discord.gg/uEqdGs6w6F" className="text-mc-primary hover:underline">Discord</a>.
           </p>
         </motion.div>
       </div>

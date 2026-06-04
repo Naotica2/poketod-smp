@@ -28,7 +28,7 @@ const tutorialData: Record<LauncherKey, {
   legacy: {
     name: "Legacy Launcher",
     downloadLink: "https://llaun.ch/en",
-    modpackLink: "https://tyejuegajucylgrzrdrv.supabase.co/storage/v1/object/public/poketod%20smp/poketod%20smp.mrpack",
+    modpackLink: "https://modrinth.com/modpack/poketod-smp",
     showModpackDownload: true, // Ganti ke false jika ingin menyembunyikan tombol download modpack untuk launcher ini
     steps: [
       {
@@ -71,7 +71,7 @@ const tutorialData: Record<LauncherKey, {
   prism: {
     name: "Prism Launcher",
     downloadLink: "https://prismlauncher.org/",
-    modpackLink: "https://tyejuegajucylgrzrdrv.supabase.co/storage/v1/object/public/poketod%20smp/poketod%20smp.mrpack",
+    modpackLink: "https://modrinth.com/modpack/poketod-smp",
     showModpackDownload: true, // Ganti ke false jika ingin menyembunyikan tombol download modpack untuk launcher ini
     steps: [
       {
@@ -95,7 +95,7 @@ const tutorialData: Record<LauncherKey, {
   zalith: {
     name: "Zalith Launcher",
     downloadLink: "#",
-    modpackLink: "https://tyejuegajucylgrzrdrv.supabase.co/storage/v1/object/public/poketod%20smp/poketod%20smp.mrpack",
+    modpackLink: "https://modrinth.com/modpack/poketod-smp",
     showModpackDownload: true, // Ganti ke false jika ingin menyembunyikan tombol download modpack untuk launcher ini
     steps: [
       {
@@ -117,7 +117,7 @@ const tutorialData: Record<LauncherKey, {
   pojav: {
     name: "Pojav/Mojo Launcher",
     downloadLink: "#",
-    modpackLink: "https://tyejuegajucylgrzrdrv.supabase.co/storage/v1/object/public/poketod%20smp/poketod%20smp.mrpack",
+    modpackLink: "https://modrinth.com/modpack/poketod-smp",
     showModpackDownload: true, // Ganti ke false jika ingin menyembunyikan tombol download modpack untuk launcher ini
     steps: [
       {
@@ -316,7 +316,7 @@ export default function HowToJoinPage() {
               </p>
 
               <div className="bg-dark-900 border-4 border-dark-950 p-4 flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
-                <span className="font-heading text-xl text-white">mc.poketod.games</span>
+                <span className="font-heading text-xl text-white">mc.poketod.my.id</span>
               </div>
 
             </div>
@@ -330,7 +330,7 @@ export default function HowToJoinPage() {
               <p className="text-dark-300 font-bold mb-6 max-w-md mx-auto">
                 If you encounter any issues during installation, feel free to ask for help in our Discord server.
               </p>
-              <a href="https://discord.gg/poketodsmp" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2">
+              <a href="https://discord.gg/uEqdGs6w6F" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2">
                 Join Discord Support <ChevronRight size={18} />
               </a>
             </div>

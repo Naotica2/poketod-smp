@@ -14,15 +14,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Poketod SMP: Cobblemon × Create Aeronautics',
+    default: 'Poketod SMP: The Ultimate Cobblemon Server',
     template: '%s | Poketod SMP',
   },
   description:
-    'Join Poketod SMP a unique Minecraft server blending Cobblemon with Create Aeronautics. Catch Pokémon, build steampunk machines, and explore with friends!',
-  keywords: ['Minecraft', 'SMP', 'Cobblemon', 'Create Aeronautics', 'Pokémon', 'Steampunk', 'Server'],
+    'Join Poketod SMP, the ultimate Minecraft Cobblemon server. Catch Pokémon, battle in Gyms, and become a Pokémon Master!',
+  keywords: ['Minecraft', 'SMP', 'Cobblemon', 'Pokémon', 'Mega Evolution', 'Server'],
   openGraph: {
-    title: 'Poketod SMP: Cobblemon × Create Aeronautics',
-    description: 'Catch, Build, Fly. Join the ultimate hybrid Minecraft experience.',
+    title: 'Poketod SMP: The Ultimate Cobblemon Server',
+    description: 'Catch, Train, Battle. Join the ultimate Cobblemon SMP experience.',
     type: 'website',
   },
 }

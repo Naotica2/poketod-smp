@@ -24,21 +24,21 @@ import {
 } from 'lucide-react'
 import blogData from '@/data/blog.json'
 
-const SERVER_IP = 'mc.poketod.games'
+const SERVER_IP = 'mc.poketod.my.id'
 
 const features = [
   {
     icon: Sparkles,
     title: 'Cobblemon',
     description:
-      'Catch, train, and battle over 300+ Pokémon in a stunning open world. Trade with friends, complete your Pokédex, and become the ultimate trainer.',
+      'Catch, train, and battle over 1,000+ Pokémon in a stunning open world. Trade with friends, complete your Pokédex, and become the ultimate trainer.',
     colorClass: 'bg-mc-primary-dark',
   },
   {
-    icon: Cog,
-    title: 'Create Aeronautics',
+    icon: Sparkles,
+    title: 'Mega Evolutions & Gyms',
     description:
-      'Engineer incredible steampunk machines, airships, and contraptions. From automated factories to flying fortresses — your imagination is the limit.',
+      'Experience intense battles with Mega Evolutions, challenge our custom Player Gym League, and rise through the ranks in the Battle Tower!',
     colorClass: 'bg-brass-400',
   },
   {
@@ -96,9 +96,8 @@ export default function HomePage() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="font-heading text-lg sm:text-xl text-dark-300 max-w-2xl mx-auto mb-8 leading-relaxed font-bold bg-dark-900/80 p-4 border-4 border-dark-950 shadow-[4px_4px_0_#06080b]"
           >
-            Where <span className="text-mc-primary text-shadow">Cobblemon</span> meets{' '}
-            <span className="text-mc-brass text-shadow">Create Aeronautics</span>. Catch Pokémon,
-            engineer steampunk machines, and forge your adventure.
+            The Ultimate <span className="text-mc-primary text-shadow">Cobblemon</span> Experience. Catch Pokémon,
+            conquer the Gym League, discover Mega Evolutions, and forge your adventure.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -133,7 +132,7 @@ export default function HomePage() {
 
               {/* Discord Button */}
               <a
-                href="https://discord.gg/poketodsmp"
+                href="https://discord.gg/uEqdGs6w6F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-ghost font-heading flex items-center gap-2 px-6 py-4 text-xl"
@@ -159,7 +158,7 @@ export default function HomePage() {
             What Makes Us Unique
           </h2>
           <p className="text-dark-300 max-w-2xl mx-auto bg-dark-900/80 p-4 border-4 border-dark-950 shadow-[4px_4px_0_#06080b]">
-            Three worlds collide to create an unforgettable Minecraft experience.
+            Experience a feature-rich Cobblemon world built for the ultimate trainer.
             Explore what awaits you on Poketod SMP.
           </p>
         </motion.div>
@@ -210,11 +209,11 @@ export default function HomePage() {
           {[
             {
               q: "What is Poketod SMP?",
-              a: "We are a unique Minecraft server blending Cobblemon (Pokémon) and Create Aeronautics (Steampunk Airships) for an ultimate adventure."
+              a: "We are a dedicated Minecraft server providing the ultimate Cobblemon adventure with Gym Leagues, Mega Evolutions, and a thriving economy."
             },
             {
               q: "How do I join the server?",
-              a: "You need Minecraft Java Edition and our custom modpack. Copy the IP 'mc.poketod.games' and join our Discord for the easy installation guide!"
+              a: "You need Minecraft Java Edition and our custom modpack. Copy the IP 'mc.poketod.my.id' and join our Discord for the easy installation guide!"
             },
             {
               q: "Can cracked/offline Minecraft accounts join?",

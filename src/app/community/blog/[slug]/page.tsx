@@ -82,7 +82,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <p className="text-sm text-dark-400 font-bold">Join our Discord to discuss it with the community!</p>
             </div>
           </div>
-          <a href="https://discord.gg/poketodsmp" target="_blank" rel="noopener noreferrer" className="btn-ghost shrink-0">
+          <a href="https://discord.gg/uEqdGs6w6F" target="_blank" rel="noopener noreferrer" className="btn-ghost shrink-0">
             Join Discord
           </a>
         </div>

@@ -38,8 +38,7 @@ const content: Record<string, { title: string; sections: { heading: string; text
     title: 'Legal Disclosures',
     sections: [
       { heading: 'Minecraft', text: 'Poketod SMP is not affiliated with, endorsed by, or associated with Mojang Studios, Microsoft Corporation, or any of their subsidiaries. Minecraft is a registered trademark of Mojang Studios.' },
-      { heading: 'Cobblemon', text: 'Cobblemon is a community-created mod. We are not affiliated with the Cobblemon development team. All Cobblemon assets and trademarks belong to their respective owners.' },
-      { heading: 'Create Mod', text: 'The Create mod and Create Aeronautics are community-created modifications. We are not affiliated with their development teams.' },
+      { heading: 'Cobblemon Mod', text: 'The Cobblemon mod is a community-created modification. We are not affiliated with their development team.' },
       { heading: 'Liability', text: 'Poketod SMP is provided "as is" without warranties. We are not liable for any damages, data loss, or interruptions arising from the use of our services.' },
       { heading: 'Dispute Resolution', text: 'Any disputes shall be resolved through direct communication with server administration via Discord. We encourage peaceful resolution of all conflicts.' },
     ],
